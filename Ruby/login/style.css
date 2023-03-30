@@ -1,0 +1,76 @@
+/* 背景 */
+body {
+	background-color: #808080;
+}
+
+form {
+	width: 400px; /* pタグが2行 */
+	padding: 40px 100px;/* 内側になった */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center; /* テキストが中央になった*/
+}
+
+form h1,form p {
+	color: white; /* テキストが白*/
+	font-weight: 500; /* LOGINが細くなった*/
+}
+
+form p {
+	font-size: 10px;/* フォントが小さくなった*/
+}
+
+form input[type = "singin"],form input[type = "id"],form input[type = "password"]{
+	border: 0;/* テキストエリアの幅が狭くなった*/
+	background: none;/* テキストエリアの背景が白から背景と同じ色になった*/
+	display:block;/* useridとpasswordのテキストエリアが左側に寄って2行になる、loginボタンが中央になった*/
+	margin: 20px auto;/* useridとpasswordのテキストエリアが中央になった*/
+	border: 3px solid black;/* useridとpasswordのテキストエリアの縁がピンクになる*/
+	padding: 15px 10px;/* useridとpasswordのテキストエリアの大きさが縦15px横10px*/
+	width: 200px;
+	outline: none;
+	border-radius: 24px;/* useridとpasswordのテキストエリアの縁が丸くなる*/
+	transition: 0.25s;
+	text-align: center;/* useridとpasswordのテキストエリアの中の文字が中央*/
+}
+
+form input[type = "text"]:focus,form input[type = "id"]:focus,form input[type = "password"]:focus{
+	width: 300px;/*入力する時に幅が広がる*/
+	background-color: #f0f8ff;
+}
+
+form input[type = "submit"]{
+	border: 0;/*loginボタンが小さくなる*/
+	background: none;/*loginボタンの背景が背景と同じ色になる*/
+	display: block;/*loginボタンが左に寄る*/
+	margin: 20px auto;/*loginボタンが中央になる*/
+	border: 3px solid #f0f8ff;/*loginボタンの縁が白くなる*/
+	padding: 15px 10px;/*loginボタンの縦が15横が10*/
+	width: 225px;/*loginボタンの幅が200*/
+	outline: none;
+	color: white;/*loginボタンloginが白*/
+	border-radius: 25px;/*loginボタンの縁がまる*/
+	transition: 0.25s;
+	text-align: center;
+	cursor: pointer;
+}
+form input[type = "singin"],form input[type = "submit"]:hover {
+	background-color: black;
+	border: 2px solid black;
+}
+.form-footer a:hover {
+	border-bottom: 15px dotted #8c8c8c;
+}
+/* プレースホルダーの色(個別指定)*/
+form input[type = "password"]::placeholder {
+	color: #CEC5F0;
+}
+form input[type = "singin"],form input[type = "id"]::placeholder {
+	color: #CEC5F0;
+}
+/* プレースホルダーの色(全部同じ)*/
+/* ::placeholder {
+	color: #CEC5F0;
+  } */
