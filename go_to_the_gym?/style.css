@@ -1,0 +1,40 @@
+body {
+	/* フォントの大きさ */
+	font-size : 30px;
+	/* フォントの太さ */
+	font-weight:bold;
+	background-color:pink;
+	/* 中央揃え */
+	text-align: center;
+}
+
+
+div {
+	/* 上からの位置 */
+	margin: 8%;
+	/* padding: 8%; */
+	color: black;
+}
+.yes_button, .no_button {
+    margin: 10px;
+}
+
+.yes_button {
+	/* ボタンのテキストの色を指定できる*/
+	color: black;
+	background-color:white;
+	/* ボタンの幅 */
+	width: 8%;
+	/* ボタンの高さ */
+	padding: 8px;
+}
+
+.no_button {
+	color: black;
+	background-color: red;
+
+	/* ボタンの幅 */
+	width: 8%;
+	/* ボタンの高さ */
+	padding: 8px;
+}
